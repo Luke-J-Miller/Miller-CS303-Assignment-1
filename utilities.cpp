@@ -162,6 +162,8 @@ bool MenuOperations(IntegerList& integerList, char MenuSelection) {
 			value = ValidateIntegerInput();
 			std::cout << std::endl;
 			index = integerList.searchIntListForInt(value);
+			std::cout << value << " found at index " << index << std::endl << std::endl;
+
 			break;
 		case 'd':
 			std::cout << "Enter the index of the value you want to delete. ";
